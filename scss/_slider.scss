@@ -1,0 +1,14 @@
+.slide {
+    &-subheading {
+        color: rgba(255, 255, 255, 0.5);
+        letter-spacing: 0.05em;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+    }
+    &-desc {
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        margin: 3.75rem 0 4rem;
+        color: white;
+    }
+}

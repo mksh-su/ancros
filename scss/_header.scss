@@ -1,0 +1,91 @@
+.header {
+  position: relative;
+  &-nav {
+    display: flex;
+    gap: 2.25rem;
+    padding: 1.25rem 3rem;
+    transform: translateY(-4rem);
+    &-link {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: 1.5rem;
+      letter-spacing: 0.05em;
+      font-weight: 350;
+      transition: 0.3s opacity;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:nth-child(2) {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.logo {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 2.125rem;
+  line-height: 1.5rem;
+  margin-top: 1.125rem;
+  border-top: 1px solid white;
+  padding: 0.75rem 0;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    top: -1px;
+    position: absolute;
+    border-top: 1px solid white;
+    border-radius: 1.25rem 0 0 0;
+    flex-grow: 1;
+  }
+
+  &:before {
+    left: calc(-1rem - 1px);
+    border-left: 1px solid white;
+  }
+
+  &:after {
+    right: calc(-1rem - 1px);
+    border-right: 1px solid white;
+    border-radius: 0 1.25rem 0 0;
+  }
+
+  &-container {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      height: 2rem;
+      margin-top: 2rem;
+      bottom: 0;
+      border-bottom: 1px solid white;
+      border-radius: 0 0 1.25rem 0;
+      flex-grow: 1;
+    }
+
+    &:before {
+      margin-right: 1rem;
+      border-right: 1px solid white;
+    }
+
+    &:after {
+      margin-left: 1rem;
+      border-left: 1px solid white;
+      border-radius: 0 0 0 1.25rem;
+    }
+  }
+}
