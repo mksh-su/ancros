@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>ancros.dev</title>
   </head>
@@ -12,6 +12,9 @@
     <header class="header">
       <div class="logo-container">
         <a href="#" class="logo">EXPERIENCE</a>
+      </div>
+      <div class="burger">
+        <span></span>
       </div>
       <nav class="header-nav">
         <a href="#" class="header-nav-link">Records</a>
@@ -21,13 +24,58 @@
         <a href="#" class="header-nav-link">Contact</a>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <div class="container">
-        <div class="slide">
-          <p class="slide-subheading">NFT</p>
-          <h1 class="h1">THE DROPLET</h1>
-          <p class="slide-desc">Will be announced soon</p>
-          <a href="" class="btn">JOIN WAITLIST</a>
+        <div class="swiper-container">
+          <div class="swiper main-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide main-swiper-slide">
+                <div class="slide-decor-top">
+                  <img src="img/decor.svg" alt="">
+                </div>
+                <div class="slide-decor-bottom">
+                  <a href="" class="discord-logo-link"><img src="img/discord-logo.svg" alt=""></a>
+                  <img src="img/waves.svg" alt="">
+                </div>
+                <div class="slide">
+                  <div class="slide-bg">
+                    <img src="img/slide-bg-1.svg" class="slide-bg-1" alt="">
+                    <img src="img/slide-bg-2.svg" class="slide-bg-2" alt="">
+                    <img src="img/spheres.png" class="slide-bg-main" alt="">
+                  </div>
+                  <div class="slide-text">
+                    <p class="slide-subheading">NFT</p>
+                    <h1 class="h1">THE DROPLET</h1>
+                    <p class="slide-desc">Will be announced soon</p>
+                    <a href="#" class="btn">JOIN WAITLIST</a>
+                  </div>
+                  <img src="img/slide-logo.svg" class="slide-logo" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide main-swiper-slide">
+                <div class="slide">
+                  <div class="slide-bg">
+                    <img src="img/slide-bg-1.svg" class="slide-bg-1" alt="">
+                    <img src="img/slide-bg-2.svg" class="slide-bg-2" alt="">
+                    <img src="img/spheres.png" class="slide-bg-main" alt="">
+                  </div>
+                  <div class="slide-text">
+                    <p class="slide-subheading">NFT</p>
+                    <h1 class="h1">THE DROPLET</h1>
+                    <p class="slide-desc">Will be announced soon</p>
+                    <a href="#" class="btn">JOIN WAITLIST</a>
+                  </div>
+                  <img src="img/slide-logo.svg" class="slide-logo" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-swiper-button-container">
+            <div class="swiper-button-prev main-swiper-button-prev"></div>
+            <div class="main-swiper-button-center"></div>
+            <div class="swiper-button-next main-swiper-button-next"></div>
+          </div>
         </div>
       </div>
     </main>
