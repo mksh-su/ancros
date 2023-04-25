@@ -149,6 +149,9 @@
       @media (max-width: 1100px) {
         width: 15rem;
       }
+      @media (max-width: 576px) {
+        width: 13rem;
+      }
     }
     &-top {
       border-radius: 0 0 0 2rem;
@@ -183,6 +186,7 @@
       border-radius: 2rem 0 0 0;
       border-top: 1px solid white;
       border-left: 1px solid white;
+      gap: .5rem;
       &:before,
       &:after {
         height: 1rem;
